@@ -1,0 +1,18 @@
+diff --git a/kitty/boss.py b/kitty/boss.py
+index ef0b482df..40ae9e1c6 100644
+--- a/kitty/boss.py
++++ b/kitty/boss.py
+@@ -1334,11 +1334,11 @@ def clear_terminal(self, action: str, only_active: bool) -> None:
+ 
+     def increase_font_size(self) -> None:  # legacy
+         cfs = global_font_size()
+-        self.set_font_size(min(get_options().font_size * 5, cfs + 2.0))
++        self.set_font_size(min(get_options().font_size * 5, cfs * 1.2))
+ 
+     def decrease_font_size(self) -> None:  # legacy
+         cfs = global_font_size()
+-        self.set_font_size(max(MINIMUM_FONT_SIZE, cfs - 2.0))
++        self.set_font_size(max(MINIMUM_FONT_SIZE, cfs / 1.2))
+ 
+     def restore_font_size(self) -> None:  # legacy
+         self.set_font_size(get_options().font_size)
