@@ -7,3 +7,5 @@ this makes zooming in with these actions feel more like emacs.
 the affected functions are legacy so :/
 
 the pkgbuild is a copy of the regular aur pkgbuild
+
+# a better solution has been added to the offical kitty repo so this is unnecessary now
